@@ -7,15 +7,19 @@ body {
     padding: 20px 20px 20px 20px;  
 
 }
-.left {
+.left_wr {
     width: 30%;
     float: left;
 }
 
 
-.right {
+.right_wr {
     width: 70%;
     float: left;
+}
+
+.top {
+    height: 35px;
 }
 
 .wr {
