@@ -10,7 +10,13 @@
 
 <body>
     <div class="wr">
-        <h1>Test</h1>
+        <div class="left">
+        </div>     
+        <div class="right">
+            <div class="lblname">
+                Rechte
+            </div>
+        </div>
     </div>
   <script src="public/scripts.js"></script>
 </body>
