@@ -1,0 +1,49 @@
+body {
+    background-color: white;
+    font-family:      "Calibri";
+}
+.lblname {
+    background-color: lightgray;
+    padding: 20px 20px 20px 20px;  
+
+}
+.left {
+    width: 30%;
+    float: left;
+}
+
+
+.right {
+    width: 70%;
+    float: left;
+}
+
+.wr {
+    width: 100%;
+}
+
+.bolding {
+    width: 100%;
+    background-color: lightgray;
+    font-size: 36px;
+    clear:both;
+}
+
+ul {
+    padding: 20px;
+}
+
+
+
+ul li {
+    list-style-type: none;
+    margin: 5px;
+}
+
+.add-new {
+    float: right;
+}
+
+.btn {
+    text-decoration: none;
+}
