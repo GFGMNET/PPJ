@@ -3,7 +3,7 @@
    .left
     <NavMenu />
    .right
-    h1 test
+    
 </template>
 
 <script>
@@ -23,11 +23,11 @@ export default {
 
 }
 .left {
-  width: 30%;
+  width: 20%;
   float: left;
 }
 .right {
-  width: 65%;
+  width: 75%;
   float: left;
 }
 
