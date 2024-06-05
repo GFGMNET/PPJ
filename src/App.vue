@@ -3,16 +3,17 @@
    .left
     <NavMenu />
    .right
-    
+    <ListMyProjects />
 </template>
 
 <script>
 import NavMenu from './components/NavMenu.vue'
-
+import ListMyProjects from './components/ListMyProjekts.vue'
 export default {
   name: 'App',
   components: {
-    NavMenu
+    NavMenu,
+    ListMyProjects
   }
 }
 </script>
