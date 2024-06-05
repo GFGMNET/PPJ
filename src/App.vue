@@ -1,30 +1,34 @@
-<template>
-  <div id="app">
-    <form @submit.prevent="submitForm">
-      <label for="name">Enter your name:</label>
-      <input type="text" id="name" v-model="name" />
-      <button type="submit">Submit</button>
-    </form>
-    <p v-if="greeting">{{ greeting }}</p>
-  </div>
+<template lang="pug">
+  #app
+   .left
+    <NavMenu />
+   .right
+    h1 test
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
+import NavMenu from './components/NavMenu.vue'
 
 export default {
   name: 'App',
-
+  components: {
+    NavMenu
+  }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+ width: 100%;
+
 }
+.left {
+  width: 30%;
+  float: left;
+}
+.right {
+  width: 65%;
+  float: left;
+}
+
 </style>
