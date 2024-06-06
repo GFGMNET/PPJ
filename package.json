@@ -12,6 +12,8 @@
   "dependencies": {
     "body-parser": "*",
     "express": "*",
-    "pug": "*"
+    "fast-xml-parser": "^4.4.0",
+    "pug": "*",
+    "xml-to-pdf": "^1.5.0"
   }
 }
