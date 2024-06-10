@@ -35,19 +35,33 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => {
+     let Buid = process.env.USERNAME
      res.render("index", {
-       title: "Home" 
+       title: "Home",
+       uid: Buid
        
      });
-  
+     
   
   
   });
 
+app.get("/cases", (req, res) => {
+    let Buid = process.env.USERNAME
+    res.render("ppj", {
+      title: "Cases",
+      uid: Buid
+      
+    });
+    
+ 
+ 
+ });
+
 app.post("/add_case", (req, res ) => {
     let doc = req.body
-    console.log(doc)
-//db.insert(doc, function (err, newDoc) { });
+    
+    db.insert(doc, function (err, newDoc) { });
 
     res.render("index", {
         title: "Home"
