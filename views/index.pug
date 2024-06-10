@@ -6,7 +6,12 @@ block append main
    .ManUv
      h4 Username    
  .right
-     h1 Welcome 
-     p PPJ
-     p ACCESS
+    form(action='/add_case', method='POST')
+     div(class="input-group mb-3")
+      span(class="input-group-text" id="inputGroup-sizing-default") Default
+      input(type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default")
+
+      
+
+
 
