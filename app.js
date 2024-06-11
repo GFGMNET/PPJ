@@ -47,7 +47,7 @@ app.get("/", (req, res) => {
   });
 
 app.get("/cases", (req, res) => {
-    let Buid = process.env.USERNAME
+    let Buid = process.env.BUSERNAME
     res.render("ppj", {
       title: "Cases",
       uid: Buid
