@@ -35,7 +35,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => {
-     let Buid = process.env.USERNAME
+     let Buid = process.env.BUSERNAME
      res.render("index", {
        title: "Home",
        uid: Buid
@@ -60,11 +60,13 @@ app.get("/cases", (req, res) => {
 
 app.post("/add_case", (req, res ) => {
     let doc = req.body
-    
+    let Buid = process.env.BUSERNAME
     db.insert(doc, function (err, newDoc) { });
 
-    res.render("index", {
-        title: "Home"
+    res.render("created", {
+        title: "Home",
+        bginfo: doc,
+        uid: Buid
     })
 })
 

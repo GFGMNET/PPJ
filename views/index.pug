@@ -9,16 +9,16 @@ block append main
  .right
     form(action='/add_case', method='POST')
      div(class="input-group mb-3")
-      span(class="input-group-text" id="inputGroup-sizing-default") Created by  
+      span(class="input-group-text col-3" id="inputGroup-sizing-default") Created by  
       input(type="text" name="txtUID" class="form-control" aria-label="Project Name" aria-describedby="inputGroup-sizing-default" value=uid required)
      div(class="input-group mb-3")
-      span(class="input-group-text" id="inputGroup-sizing-default") Project Name
+      span(class="input-group-text col-3" id="inputGroup-sizing-default") Project Name
       input(type="text" name="txtProjectName" class="form-control" aria-label="Project Name" aria-describedby="inputGroup-sizing-default" required)
      div(class="input-group mb-3")
-      span(class="input-group-text") Description
+      span(class="input-group-text col-3") Description
       textarea(class="form-control" aria-label="With textarea" name="description")
      div(class="input-group mb-3")
-      label(class="input-group-text" for="inputGroupSelect01") Type
+      label(class="input-group-text col-3" for="inputGroupSelect01") Type
       select( class="form-select" id="inputGroupSelect01" name="cbxType")
         option(value="") -- Select Type --
         option(value="Hardware") Hardware

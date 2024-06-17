@@ -1,0 +1,14 @@
+extends layout
+block append main
+ .left
+   .ManUv
+     h3 TOOLS 
+   .ManUv
+     h4 
+      | #{ uid }    
+ .right
+  h4 Project created #{ bginfo.txtProjectName }
+  P
+   | please answer the 
+   a(href="/case/" + bginfo._id) question 
+   
